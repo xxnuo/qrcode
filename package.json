@@ -8,7 +8,7 @@
         "build:cjs": "esbuild src/qrcode.js --bundle --format=cjs --minify --sourcemap --outfile=dist/qrcode.cjs.js",
         "build:esm": "esbuild src/qrcode.js --bundle --format=esm --minify --sourcemap --outfile=dist/qrcode.esm.js",
         "build:iife": "esbuild src/qrcode.js --bundle --format=iife --minify --sourcemap --global-name=QRCode --outfile=dist/qrcode.iife.js",
-        "build:umd": "esbuild src/qrcode.js --bundle --minify --target=es2015 --format=iife --global-name=QRCode --outfile=dist/qrcode.umd.js",
+        "build:umd": "esbuild src/qrcode.js --bundle --format=iife --minify --sourcemap --global-name=QRCode --target=es2015 --outfile=dist/qrcode.umd.js",
         "build:all": "pnpm run build:cjs && pnpm run build:esm && pnpm run build:iife && pnpm run build:umd",
         "clean": "rm -rf dist/*",
         "prebuild": "pnpm run clean",
