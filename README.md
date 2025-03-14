@@ -22,8 +22,6 @@
 ### 基本使用
 
 ```javascript
-import QRCode from "qrcode-web";
-
 // 生成二维码
 const container = document.getElementById("qrcode");
 const qrcode = QRCode.generate(
